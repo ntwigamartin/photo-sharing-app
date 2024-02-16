@@ -1,7 +1,7 @@
 import React from 'react'
 import AlbumCard from './AlbumCard';
 
-const UserAlbumsList = ({ user, albums}) => {
+const AlbumsList = ({ user, albums}) => {
   return (
     <div className=''>
         <div className='flex w-full justify-center text-3xl font-bold'>
@@ -21,4 +21,4 @@ const UserAlbumsList = ({ user, albums}) => {
   )
 }
 
-export default UserAlbumsList;
+export default AlbumsList;
