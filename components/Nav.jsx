@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
 
+
 const Nav = () => {
     const { data: session } = useSession() || { data: null };
 
@@ -37,9 +38,9 @@ const Nav = () => {
         <div className='sm:flex hidden'>
             {session?.user ? (
               <div className='flex gap-3 md:gap-5'>
-                <Link href="/home" className=''>
+                <Link href="/users" className=''>
                     <button type="button" className='btn btn-sm'>
-                      home
+                      users
                     </button>
                 </Link>
                 <button type='button' onClick={signOut} className='btn btn-sm'>

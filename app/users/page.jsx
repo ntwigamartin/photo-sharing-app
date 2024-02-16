@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import UsersList from '@components/UsersList';
 
-const Home = () => {
+const Users = () => {
   const [users, setUsers] = useState([]);
   const [albums, setAlbums] = useState([]);
 
@@ -33,4 +33,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Users;
