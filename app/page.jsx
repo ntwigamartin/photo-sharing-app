@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center h-screen w-full">
       <div className=" flex flex-col justify-center mt-40">
-        <h1 className="font-black pl-20">Photo Gallery Application</h1>
+        <h1 className="font-black pl-20">Your Favourite Photo Gallery</h1>
         <p className="font-normal">
           Welcome to the photo library where you can share your 
         </p>
