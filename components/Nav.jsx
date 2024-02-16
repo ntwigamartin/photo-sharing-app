@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
 
 const Nav = () => {
-    const { data: session } = useSession();
+    const { data: session } = useSession() || { data: null };
 
     const [providers, setProviders ] = useState(null);
 
@@ -21,7 +21,7 @@ const Nav = () => {
         setUpProviders();
     }, [])
   return (
-    <nav className='flex justify-between w-full mb-16 pt-3'>
+    <nav className='flex justify-evenly w-full mb-16 pt-3'>
         <Link href='/' className='flex gap-2 flex-center items-center ml-5'>
             <Image 
                 src="/assets/icons/logo.png"
@@ -37,7 +37,12 @@ const Nav = () => {
         <div className='sm:flex hidden'>
             {session?.user ? (
               <div className='flex gap-3 md:gap-5'>
-                <button type='button' onClick={signOut} className='btn btn-outline btn-info'>
+                <Link href="/home" className=''>
+                    <button type="button" className='btn btn-sm'>
+                      home
+                    </button>
+                </Link>
+                <button type='button' onClick={signOut} className='btn btn-sm'>
                     Sign Out
                 </button>
 
