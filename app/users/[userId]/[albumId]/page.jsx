@@ -28,7 +28,7 @@ const Album = ({params}) => {
         <PhotosList 
             album={album}
             photos={photos}
-            user={params.userId}
+            userId={params.userId}
         />
     </div>
   )

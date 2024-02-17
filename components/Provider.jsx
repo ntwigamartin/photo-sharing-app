@@ -1,14 +1,19 @@
 "use client";
 
-import { SessionProvider } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
+import { SessionProvider } from 'next-auth/react';
+import { useEffect } from 'react';
+
 
 const Provider = ({ children, session }) => {
   const router = useRouter();
 
-  if (session?.user === null) {
-    router.push('/');
-  }
+
+    if (!session || session.user === null) {
+      router.push('/');
+  
+    }
+  
 
   return (
     <SessionProvider session={session}>

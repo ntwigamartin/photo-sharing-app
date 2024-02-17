@@ -1,4 +1,4 @@
-import React from 'react'
+import Link from "next/link";
 import AlbumCard from './AlbumCard';
 
 const AlbumsList = ({ user, albums}) => {

@@ -25,6 +25,9 @@ const Users = () => {
 
   return (
     <div>
+        <div className='flex justify-center w-full text-3xl font-extrabold'>
+          <h1>All USERS</h1>
+        </div>
         <UsersList 
           usersdata={users}
           albumsdata={albums}
