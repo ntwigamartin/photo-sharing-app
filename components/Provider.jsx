@@ -9,10 +9,10 @@ const Provider = ({ children, session }) => {
   const router = useRouter();
 
 
-    if (!session || session.user === null) {
+    /* if (!session || session.user === null) {
       router.push('/');
   
-    }
+    } */
   
 
   return (
