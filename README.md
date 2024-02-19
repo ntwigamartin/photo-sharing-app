@@ -4,7 +4,7 @@
 This is an application built with Next.JS framework where users can share their photos and view other users photos .
 
 ## Using the app
-The application is accessible online via this [link](https://photolib.vercel.app/). It can also be accessed locally by following the below instructions to set it up;
+The application is accessible online via this [link](https://photolib.vercel.app/). Currently, the application is configured to only use google OAuth for authentication so you will need to have a google account to sign in. It can also be accessed locally by following the below instructions to set it up;
 
 - Step 1: clone this repository to your local environment;
 
