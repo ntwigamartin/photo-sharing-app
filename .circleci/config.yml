@@ -32,10 +32,10 @@ jobs:
       #     command: npm run test
 
       # Deployment to Vercel
-      - run:
-          name: Deploy to Vercel
-          command: |
-            npm install -g vercel
-            vercel 
+      # - run:
+      #     name: Deploy to Vercel
+      #     command: |
+      #       npm install -g vercel
+      #       vercel 
 
       
