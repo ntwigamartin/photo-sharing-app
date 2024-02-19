@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PHOTOLIB
 
-## Getting Started
+## Description
+This is an application built with Next.JS framework where users can share their photos and view other users photos .
 
-First, run the development server:
+## Using the app
+The application is accessible online via this [link](https://photolib.vercel.app/). It can also be accessed locally by following the below instructions to set it up;
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Step 1: clone this repository to your local environment;
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+        git@github.com:ntwigamartin/photo-sharing-app.git
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Step 2: Open the cloned repository using your favourite editor e.g vscode, intellij..
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Step 3: Install the dependencies;
 
-## Learn More
+        npm install
+        npm install next-auth mongodb mongoose
 
-To learn more about Next.js, take a look at the following resources:
+- Step 4: Generate the env variables and update as necessary.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Step 5: Start the application;
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+        npm start
 
-## Deploy on Vercel
+- Step 6: Access it on localhost;
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+        http://localhost:3000
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Author
+
+- [Martin Ntwiga](https://github.com/ntwigamartin)
+
