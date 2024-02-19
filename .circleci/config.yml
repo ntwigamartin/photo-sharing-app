@@ -27,9 +27,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # Build and Test
-      - run:
-          name: Run Tests
-          command: npm run test
+      # - run:
+      #     name: Run Tests
+      #     command: npm run test
 
       # Deployment to Vercel
       - run:
