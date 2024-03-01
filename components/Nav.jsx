@@ -90,11 +90,11 @@ const Nav = () => {
                 {toggleDropdown && (
                     <div className='absolute right-0 top-full mt-1 w-full p-5 rounded-lg  min-w-[210px] flex flex-col '>
                         <Link 
-                            href="/profile"
+                            href="/users"
                             className='self-end'
                             onClick={() => setToggleDropdown(false)}
                         >
-                            My Profile
+                            users
                         </Link>
                         
                         <button 
